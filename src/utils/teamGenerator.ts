@@ -16,7 +16,7 @@ export const generateTeams = (confirmedPlayers: UserProfile[]) => {
   const shuffledForwards = shuffle([...forwards]);
   
   // Create three balanced teams based on positions and skill ratings
-  const teams = [[], [], []];
+  const teams: UserProfile[][] = [[], [], []];
   const teamRatings = [0, 0, 0];
   
   // Distribute goalkeepers (one per team)
